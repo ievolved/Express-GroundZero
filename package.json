@@ -1,14 +1,22 @@
 {
   "name": "express-intro",
   "version": "1.0.0",
-  "description": "",
+  "description": "A micro-brief intro to Express.  This is for demonstration purposes only.",
   "main": "server/server.js",
   "scripts": {
     "test": "mocha --timeout 10000",
     "start": "nodemon ./server/server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ievolved/express-intro.git"
+  },
   "author": "Shawn Bullock",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ievolved/express-intro/issues"
+  },
+  "homepage": "https://github.com/ievolved/express-intro#readme",
   "dependencies": {
     "express": "^4.14.0"
   },
