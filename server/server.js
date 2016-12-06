@@ -26,7 +26,6 @@ let postware = (request, response, next) => {
 app.get("/helloworld", (request, response, next) => {
     response.send("Hi'y'all's");
     console.log("Hi'y'all's");
-    next();
   }
 );
 
