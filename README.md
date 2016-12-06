@@ -1,7 +1,7 @@
-# ExpressGroundZero
+# Express-Simple
 ----
 
-A simple application to show the simplest possible file server using ExpressJS, vs an equivelant in NodeJS.  The primary learning objectives are:
+A simple application to show the simplest possible static web server using express.js, vs an equivelant in Node.js.  The primary learning objectives are:
 
 * npm install express --save
 * require the `express` package

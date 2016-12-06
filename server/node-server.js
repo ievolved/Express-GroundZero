@@ -1,8 +1,8 @@
 
-var http = require('http');
+let http = require("http");
 
 
-var server = http.createServer(function(request, response) {
+let server = module.exports = http.createServer((request, response) => {
 
   // endpoint, headers, body
   // if request.method == POST
