@@ -20,13 +20,14 @@ let postware = (request, response, next) => {
   next();
 };
 
-
-app.get("/helloworld", middleware1, middleware2, (request, response, next) => {
+//
+// app.get("/helloworld", middleware1, middleware2, () => { }, postware);
+//
+app.get("/helloworld", (request, response, next) => {
     response.send("Hi'y'all's");
     console.log("Hi'y'all's");
     next();
-  },
-  postware
+  }
 );
 
 app.get("/bye", (request, response) => {

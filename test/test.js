@@ -38,6 +38,26 @@ describe("pages.", () => {
       });
   });
 
+  it("/helloworld should load successfully.", (done) => {
+    request
+      .get(`${host}/helloworld`, (err, response, body) => {
+        expect(response.statusCode).to.equal(200);
+        expect(response).to.have.header("content-Type", "text/html; charset=utf-8");
+        expect(body).include("Hi");
+        done();
+      });
+  });
+
+  it("/bye should load successfully.", (done) => {
+    request
+      .get(`${host}/bye`, (err, response, body) => {
+        expect(response.statusCode).to.equal(200);
+        expect(response).to.have.header("content-Type", "text/html; charset=utf-8");
+        expect(body).include("pasta");
+        done();
+      });
+  });
+
   it("/invalid.html should return 200 with content 'star'.", (done) => {
     request
       .get(`${host}/invalid.html`, (err, response, body) => {
