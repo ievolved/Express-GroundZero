@@ -2,7 +2,7 @@
   "name": "express-intro",
   "version": "1.0.0",
   "description": "",
-  "main": "server/node-server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "mocha --timeout 10000",
     "start": "nodemon ./server/server.js"
